@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+.parent{
+    background-color: gray;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+.top-container{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.middle-container{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 100px;
+    top: 0;
+}
+
+.bottom-container{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 0;
+}
