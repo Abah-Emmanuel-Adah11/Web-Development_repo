@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(46, 44, 54);
+    color:rgb(113, 212, 179);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+}
+
+footer{
+    padding-top: 3%;
+}
+
+img{
+    width:80%;
+}
+
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+
+}
