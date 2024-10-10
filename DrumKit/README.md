@@ -38,6 +38,6 @@ The Drum Kit project is interactive web application that allows users to play vi
 
 ## Acknowledgments
 
-Special thanks to [Angla yu] for the inspiration and guidance during the development of this project.
+Special thanks to Angla yu for the inspiration and guidance during the development of this project.
 
-Feel free to reach out @ [abahemmanuelabah11@gmail.com] if you have any questions or suggestions!
+Feel free to reach out @ abahemmanuelabah11@gmail.com if you have any questions or suggestions!
