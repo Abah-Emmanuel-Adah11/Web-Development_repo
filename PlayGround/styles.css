@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(26, 25, 37);
+    text-align: center;
+    color: aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 70%;
+}
+
+.mainDiv{
+    display: inline-flex;
+}
+
+.big_heading{
+    font-size: 5rem;
+}
+
+.footer{
+    padding-top: 5%;
+}
