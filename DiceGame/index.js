@@ -1,7 +1,9 @@
 /* image 1 */
-let randomNumber1 = Math.floor(Math.random()*6)+1; //Generating random numbers from 1 to 6
+// Generating random numbers which will be multiplied by 6 and 1 added to cover up for the Math.floor rounding down.
+let randomNumber1 = Math.floor(Math.random()*6)+1;
 
-let image1 = "images/dice"+randomNumber1+".png";  //Obtaining our images base on the random number generated
+// Generating random numbers which will be multiplied by 6 and 1 added to cover up for the Math.floor rounding down.
+let image1 = "images/dice"+randomNumber1+".png";
 
 let image1Store = document.querySelectorAll("img")[0].setAttribute("src",image1); //changing images to match the random number
 
