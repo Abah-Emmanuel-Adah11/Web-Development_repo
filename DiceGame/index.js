@@ -1,5 +1,5 @@
 /* image 1 */
-let randomNumber1 = Math.floor(Math.random()*6)+1; //Generating random numbers
+let randomNumber1 = Math.floor(Math.random()*6)+1; //Generating random numbers from 1 to 6
 
 let image1 = "images/dice"+randomNumber1+".png";  //Obtaining our images base on the random number generated
 
