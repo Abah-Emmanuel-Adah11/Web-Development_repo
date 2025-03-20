@@ -1,18 +1,20 @@
 /* image 1 */
-var randomNumber1 = Math.floor(Math.random()*6)+1; //Generating random numbers
+// Generating random numbers which will be multiplied by 6 and 1 added to cover up for the Math.floor rounding down.
+let randomNumber1 = Math.floor(Math.random()*6)+1;
 
-var image1 = "images/dice"+randomNumber1+".png";  //Obtaining our images base on the random number generated
+// Generating random numbers which will be multiplied by 6 and 1 added to cover up for the Math.floor rounding down.
+let image1 = "images/dice"+randomNumber1+".png";
 
-var image1Store = document.querySelectorAll("img")[0].setAttribute("src",image1); //changing images to match the random number
+let image1Store = document.querySelectorAll("img")[0].setAttribute("src",image1); //changing images to match the random number
 
 
 
 /* image 2 */
-var randomNumber2 = Math.floor(Math.random()*6)+1;
+let randomNumber2 = Math.floor(Math.random()*6)+1;
 
-var image2 = "images/dice"+randomNumber2+".png";
+let image2 = "images/dice"+randomNumber2+".png";
 
-var image2Store = document.querySelectorAll("img")[1].setAttribute("src", image2);
+let image2Store = document.querySelectorAll("img")[1].setAttribute("src", image2);
 
 
 
