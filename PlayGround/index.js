@@ -21,5 +21,7 @@ if (random > random2){
     document.querySelector(".big_heading").innerHTML = "Player 1 won"
 }
 else if (random < random2){
-    
+    document.querySelector(".big_heading").innerHTML = "Player 2 won"
+}else{
+    document.querySelector(".big_heading").innerHTML = "Its a tie"
 }
