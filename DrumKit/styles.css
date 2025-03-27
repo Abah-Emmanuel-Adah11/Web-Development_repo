@@ -7,7 +7,7 @@ body {
     font-size: 4rem;
     color: #DBEDF3;
     font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;  
+    text-shadow: 3px 0 #DA0463;  //This has to do with the background shadow of the around the "h1"
   }
   
   footer {
@@ -25,8 +25,8 @@ body {
   }
   
   .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
+    box-shadow: 0 3px 4px 0 #DBEDF3; //This has to do with the background shadow around the box and the colora at the end
+    opacity: 0.5;			//is the color to be embelded in the shadow.
   }
   
   .red {
