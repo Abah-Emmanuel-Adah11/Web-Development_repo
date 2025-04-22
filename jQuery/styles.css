@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+}
+
+.big-title{
+    font-size: 10rem;
+    color: yellow;
+    font-family: "cursive";
+}
+
+.margin-50{
+    margin: 50px;
+    background-color: indianred;
+}
+
+.fruit-color{
+    background-color: blueviolet;
+    color: chocolate;
+    line-height: 70px;
+    font-weight: bolder;
+    display: inline-block;
+}

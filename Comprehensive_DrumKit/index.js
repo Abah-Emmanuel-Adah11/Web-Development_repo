@@ -14,8 +14,10 @@ for (let i = 0; i < numberOfDrumBottons; i++){
 
         // calling the makeSound fuction
         makeSound(innerHTML);
-            
 
+        // calling the buttonAnimation function
+        buttonAnimation(innerHTML);
+            
      })        
 }
 
@@ -30,6 +32,8 @@ for (let i = 0; i < numberOfDrumBottons; i++){
         // calling the makeSound fuction
         makeSound(pressedKey);
          
+        // calling the buttonAnimation function
+        buttonAnimation(pressedKey);
     })
 
 
@@ -88,3 +92,20 @@ for (let i = 0; i < numberOfDrumBottons; i++){
         // of "key_value" in other to call it to action.
 
     //NB: Functions are important when two or more objects have identical conditions.
+
+
+    // Adding Animation to our site
+    function buttonAnimation(currentKey) {
+
+        // using string concatination to add a "dot" to the lettered class name of the drum buttons
+            // from the HTML file as received from the button animation function parameter. 
+        let activeButton = document.querySelector("."+currentKey)
+
+        // using "classList.add" to integrate the style in the css pressed class into our active button.
+        activeButton.classList.add("pressed");
+
+        // using the "setTimeout" function to remove the pressed class after a specified time
+        setTimeout(function() {
+            activeButton.classList.remove("pressed");
+        }, 100);
+    }
