@@ -9,17 +9,23 @@
 // };
 
 let buttonColor = ["red","blue","green","yellow"];
-
-
+let gamePattern =[];
 
 
 function nextSequence(){
 
     let randomNumber = Math.floor(Math.random() * 4);
-    // console.log(randomNumber);
     let randomChosenColor = buttonColor[randomNumber]
-    // console.log(randomChosenColor);
-    let gamePattern =[];
     gamePattern.push(randomChosenColor);
     console.log(gamePattern);
+
 };
+
+// $("h1").click(function () {
+//     $("h1").html("<b>I got clicked</b>")
+    
+// });
+
+$("input").keypress(function(event) {
+    console.log(event.key) 
+});
