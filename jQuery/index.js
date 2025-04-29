@@ -1,52 +1,59 @@
 
-// // Simplyfying DOM with j.query
-// for(let i = 0; i<=("button").length; i++){
-// document.querySelectorAll("button")[i].addEventListener("click",function() {
-//     document.querySelector("h1").style.color="blue"
-// });
-// }
-
-// $(document).keypress(function(event) {
-//     $("h1").html(event.key)
-// });
+// Simplyfying DOM with j.query
+for(let i = 0; i<=("button").length; i++){
+document.querySelectorAll("button")[i].addEventListener("click",function(event){
+    document.querySelector("h1").style.color="blue"
+    console.log(event)
+});
+}
 
 
-// // Changing css propertird using j.query
-// $("h1").click(function() {
-//     $("button").css("color", "red")    
-// })
+   $("button").click(function() {
+      $("h1").css("color", "blue")
+   });
 
 
-// //Adding event listener using j.Query
-// $(document).keypress(function(event){
-
-//     $("h1").text(event.key)
-
-// });
+$(document).keypress(function(event) {
+    $("h1").html(event.key)
+});
 
 
-
-// //Another method of adding event listener j.Query
-// $("h1").on("dblclick", function() {
-//     $("h1").css("color", "purple")
-// });
-
-
-// //Removing class using j.Query
-// $("h1").removeClass("margin-50")
+// Changing css propertird using j.query
+$("h1").click(function() {
+    $("button").css("color", "red")    
+})
 
 
-// //Before, after, append and prepend methods in javaScript
-// $("ul").before("Hello world!")
-// $("p").after("<p>New Button</p>")
-// $("h1").append("<button>New click Me app</button>")
-// $("h1").prepend("<button>New click Me pre</button>")
-// $("button").remove()
+//Adding event listener using j.Query
+$(document).keypress(function(event){
+
+    $("h1").text(event.key)
+
+});
 
 
-// $("h1").click(function() {
-//     $("button").hide()   
-// })
+
+//Another method of adding event listener j.Query
+$("h1").on("dblclick", function() {
+    $("h1").css("color", "purple")
+});
+
+
+//Removing class using j.Query
+$("h1").removeClass("margin-50")
+
+
+//Before, after, append and prepend methods in javaScript
+$("ul").before("Hello world!")
+$("p").after("<p>New Button</p>")
+$("h1").append("<button>New click Me app</button>")
+$("h1").prepend("<button>New click Me pre</button>")
+$("button").remove()
+
+
+$("h1").click(function() {
+    $("button").hide()   
+})
 
 $("button").on("click", function() {
    $("h1").slideUp().slideDown().animate({opacity:0.5}); 
