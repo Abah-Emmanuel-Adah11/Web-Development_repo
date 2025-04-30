@@ -70,7 +70,7 @@ function generateOutput(invoice) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>invoice_output</title>
+    <title>Print invoice</title>
 
     <!-- Bootstrap style sheet CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -150,64 +150,26 @@ function generateOutput(invoice) {
         </div>
           <ul class="total total-heading">
               <li><b>SUBTOTAL:</b><br>${invoice.sub_total}</li>
-              <li><b>DISCOUNT:</b><br>${invoice.discount}</li>
-              <li><b>VAT:</b><br>${invoice.vat}</li>
-              <li><b>SERVICE CHARGE:</b><br>${invoice.service_charge}</li>
-              <li><b>TOTAL DUE:</b>${invoice.grand_total}</li>
+              <li><b>DISCOUNT:</b>${invoice.discount}</li>
+              <li><b>VAT:</b>${invoice.vat}</li>
+              <li><b>SERVICE CHARGE:</b>${invoice.service_charge}</li>
+              <li><b>TOTAL DUE:</b><br>${invoice.grand_total}</li>
           </ul>
-    </section>
-
-    <!-- Payment section -->
-    <section id="payment">
-        <div class="row">
-            <div class="payment-div col-lg-12 col-md-12 offset-md-0">
-                <h3>Payment Method:</h3>
-                <ul class="recipient">
-                    <li><b>Account No:</b> 0602285440</li>
-                    <li><b>Account Name:</b> Cruiztopia integrated services Ltd</li>
-                    <li><b>Bank:</b> GTB</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Terms and conditions -->
-    <section id="terms">
-            <div>
-                <h3><b>Terms & Conditions</b></h3>
-                <p>Please settle the invoice by paying into the account number provided. Kindly share<br>the payment reciept with us upon completion</p>  
-            </div>
-    </section>
-
-    <section id="appreciation">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2><spam class="break-after">Thanks For Your</spam> <spam class="break-after">Partronage</spam></h2>
-                <p class="signature">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br>
-                    Authorised Signature</p>
-            </div>
-        </div>
     </section>
 
     <!-- footer section -->
     <section id="footer">
         <div class="row">
-            <div class="col-lg-12 col-md-5 col-sm-5 clip1">
-                <h3>Contact US:</h3>
-                <p>+2349065465539</p>
-                <p>www.cruztech.com.ng</p>
-                <p>Cruztechnologies1@gmail.com</p>
-                <p>Suit G10, Pathfied Mall, 4th Avenue, Gwarinpa Abuja, Nigeria</p>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-12 clip2">
+            <div class="col-lg-12 col-md-5 col-sm-5">
+                <ul class="footer-list">
+                    <li>+2349065465539</li>
+                    <li>www.cruztech.com.ng</li>
+                    <li>Cruztechnologies1@gmail.com</li>
+                    <li>Suit G10, Pathfied Mall, 4th Avenue, Gwarinpa Abuja, Nigeria</li>
+                </ul>
             </div>
         </div>    
     </section>
-    <!-- <hr>
-    <section id="button">
-        <button onclick="getValue()" class="btn btn-custom">Generate Invoice</button>
-    </section> -->
-    
     <!-- Bootstrap javaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./index.js" charset="UTF-8"></script>
