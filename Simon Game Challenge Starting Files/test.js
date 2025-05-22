@@ -35,6 +35,6 @@ function playSound(name) {    // This is the factory where all the input paramet
 function animatePress(currentColor) {
     $(".btn").addClass("pressed")
     setTimeout(() => {
-        
+        $(".btn").removeClass("pressed")
     }, 100);
 }
