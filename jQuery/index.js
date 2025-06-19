@@ -24,7 +24,7 @@ $("h1").click(function() {
 })
 
 
-//Adding event listener using j.Query
+//Adding the keypress event listener using j.Query
 $(document).keypress(function(event){
 
     $("h1").text(event.key)

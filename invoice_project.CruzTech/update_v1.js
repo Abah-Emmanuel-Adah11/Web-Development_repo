@@ -82,9 +82,8 @@ function generateOutput(invoice) {
     <link rel="stylesheet" type="text/css" href="output.css">
 </head>
 <body>
-    <div id="invoice-container">
 
-    <!-- heading section -->
+        <!-- heading section -->
     <section id="heading" class="container-fluid">
         <div class="row">
             <div class="top-heading col-lg-12 col-md-12 col-sm-12">
@@ -93,7 +92,7 @@ function generateOutput(invoice) {
                 </span>
                 <ul class="heading-list">
                     <li><h1>INVOICE</h1></li>
-                    <li>Issued Number: INV202506${invoice.issued_number}</li>
+                    <li>Issued Number: INV202504${invoice.issued_number}</li>
                     <li>Issued Date: ${invoice.issued_date}</li>
                 </ul>
             </div>
@@ -119,7 +118,7 @@ function generateOutput(invoice) {
 
     <!-- Product listing section -->
     <section id="product-list">
-        <div class="row table-container">
+        <div class="table-container">
             <table class="table-class">
                 <thead>
                     <tr>
@@ -136,9 +135,9 @@ function generateOutput(invoice) {
                     <tr>
                         <td>${i + 1}</td>
                         <td>${item.product_description}</td>
-                        <td>&#8358;${item.unit_price}</td>
+                        <td>${item.unit_price}</td>
                         <td>${item.quantity}</td>
-                        <td class="last-column">&#8358;${item.total}</td>
+                        <td class="last-column">${item.total}</td>
                     </tr>
                   `) : `
                     <tr>
@@ -149,80 +148,31 @@ function generateOutput(invoice) {
                 </tbody>
             </table> 
         </div>
-        <hr>
-        <div class="row under">
-                <div class="col">
-                    <h3><b>Terms & Conditions</b></h3>
-                    <p><b>
-                        Please settle the invoice by paying into the account number provided.
-                        Kindly share the payment reciept with us upon completion. If for any reason
-                        a refund is requested services charges will be applied before refunds is made.
-                    </b></p>
-                </div>
-                <div class="col-md-4 offset-md-2">
-                    <table class="total total-heading">
-                        <tr>
-                            <td class="p-3"><b>SUBTOTAL:</b></td>
-                            <td class="p-3">-</td>
-                            <td class="p-3">&#8358;${invoice.sub_total}</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3"><b>DISCOUNT:</b></td>
-                            <td class="p-3">-</td>
-                            <td class="p-3">&#8358;${invoice.discount}</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3"><b>VAT:</b></td>
-                            <td class="p-3">-</td>
-                            <td class="p-3">&#8358;${invoice.vat}</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3"><b>SERVICE CHARGE:</b></td>
-                            <td class="p-3">-</td>
-                            <td class="p-3">&#8358;${invoice.service_charge}</td>
-                        </tr>
-                        <tr class="total-due"> 
-                            <td class="p3 total-text"><b>TOTAL DUE:</b></td>
-                            <td class="p3 total-text">-</td>
-                            <td class="p3 total-text">&#8358;${invoice.grand_total}</td>
-                        </tr>
-                    </table> 
-                </div> 
-            <h5 class="thanks"><b>THANKS FOR YOUR PARTRONAGE!</b></h5>
-        </div>
+          <ul class="total total-heading">
+              <li><b>SUBTOTAL:</b><br>${invoice.sub_total}</li>
+              <li><b>DISCOUNT:</b>${invoice.discount}</li>
+              <li><b>VAT:</b>${invoice.vat}</li>
+              <li><b>SERVICE CHARGE:</b>${invoice.service_charge}</li>
+              <li><b>TOTAL DUE:</b><br>${invoice.grand_total}</li>
+          </ul>
     </section>
 
     <!-- footer section -->
     <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul>
-                        <li><p><b>PAY TO:</b></p></li>
-                        <li>Cruiztopia integrated services Ltd</li>
-                        <li>GTB Bank</li>
-                        <li>0602285440</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><p><b>CONTACT US:</b></p></li>
-                        <li>+2349065465539</li>
-                        <li>www.cruztech.com.ng</li>
-                        <li>Cruztechnologies1@gmail.com</li>
-                        <li>Suit G10, Pathfied Mall, 4th Avenue, Gwarinpa Abuja, Nigeria</li>
-                    </ul>
-                </div>
-            </div>    
-        </div>   
+        <div class="row">
+            <div class="col-lg-12 col-md-5 col-sm-5">
+                <ul class="footer-list">
+                    <li>+2349065465539</li>
+                    <li>www.cruztech.com.ng</li>
+                    <li>Cruztechnologies1@gmail.com</li>
+                    <li>Suit G10, Pathfied Mall, 4th Avenue, Gwarinpa Abuja, Nigeria</li>
+                </ul>
+            </div>
+        </div>    
     </section>
-    </div>
     <!-- Bootstrap javaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="./index.js" charset="UTF-8"></script>
-    <script src="./generate_pdf.js" charset="UTF-8"></script>
 </body>
 </html>
     `

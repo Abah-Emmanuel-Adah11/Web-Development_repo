@@ -1,8 +1,14 @@
 body{
     background-color: white;
     color: #000035;
-    margin: 0;
-    opacity: 0.8;
+    padding: 5rem;
+}
+
+/* All contents contianer ID */
+#invoice-container {
+    display: none;
+    background-color: white;
+    padding: 50px 70px;
 }
 
 
@@ -29,13 +35,16 @@ img{
 #heading{
     background-color: #000035;
     color:white;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 
 /* Stakeholders Section */
-#stakeholders{
+/* #stakeholders{
     padding: 1rem 0 0 1rem;
+} */
+#stakeholders{
+    padding: 5rem 1rem;
 }
 
 .reciever{
@@ -53,6 +62,9 @@ img{
 #product-list{
     padding-bottom: 100px;
     padding-top: 10px;
+    height: 550px; /* For footer position*/
+    /* width: 70%;
+    margin: 0 auto; added */
 }
 
 .table-class{
@@ -61,7 +73,6 @@ img{
     text-align: center;
     border-collapse: collapse;
     border: none;
-    width: 70%;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -71,93 +82,57 @@ img{
     background-color: #000035;
     color: #fff;
     padding: 2rem;
+    padding-bottom: 0.2rem;
 }
 
-.table-class input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.table-class input:hover{
-    border-color: #000035;
-    border-width: 0.5px;
-    border-style: solid;
-
-}
-
-.last-column{
+/* .last-column{
     position: relative;
-}
+} */
 
-.last-row{
+/* .last-row{
     position: absolute;
     top: 100%;
     right: 0;
     display: grid;
     width: 22%;
     text-align: left;
-}
+} */
 
 .last-row td{
     display: block;
 }
 
-
-/* Payment section */
-#payment{
-    background-color: #000035;
-    color: #fff;
-    display: inline-block;
-    margin-top: 14rem;
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+#terms{
+    padding: 4% 0 0 15%;
 }
 
-#payment ul{
-    list-style: none;
-    padding-right: 60px;
+.thanks{
+    padding-top: 6%;
 }
 
-#payment h3{
-    padding: 20px;
-}
-
-.signature{
-    display: inline-block;
-    float: right;
-    padding-right: 10%;
-}
-
-.btn-custom{
-    background-color: #000035;
-    color: #fff;
-    border: 0.1px solid #000035;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn-custom:hover{
-    background-color: #fff;
-    color: #000035;
-    border: 0.1px solid #000035;
+.under{
+    padding-top: 2rem;
 }
 
 /* Total Section */
-.total{
-    float: right;
-    list-style: none;
-    text-align: left;
-    margin: 3% 15% 0 0;
-    border-radius: 20px;
-}
-.total-heading{
+.total-due{
     background-color: #000035;
     color: #fff;
-    padding: 1rem;
+    /* margin-top: 20px; */
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* height: 50px; */
+    /* width: 23vw; */
+}
+
+.total-due .total-text { /*added this with solo*/
+    padding: 2rem 0 0 2rem;
+}
+
+.division{
+    padding: 4rem;
 }
 
 
@@ -165,36 +140,13 @@ img{
 #footer{
     background-color: #000035;
     color: #fff;
-    margin-top: 20%;
+    padding: 2rem 0 0 0;
+    margin-top: 30%; /* Footer position */
 }
 
-.footer-list{
+#footer ul{
     color: #fff;
     list-style: none;
     padding: 2% 1%;
-    /* display: flex; */
-}
-
-/* .clip1{
-    background-color: #000035;
-    color: #fff;
-    width: 60%;
-    padding-left: 2rem;
-    padding-top: 1rem;;
-    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
-}
-
-.clip2{
-    width: 40%;
-    display: inline-block;
-    background-color: #000035;
-    clip-path: polygon(0 100px, 100% 100px, 100% 100%, 16% 100%);
-} */
-
-/* Media Query */
-@media only screen and (max-width: 768px){
-    .break-after:after{
-        content: "\A";
-        white-space: pre;
-    }
+    /* display: flex;*/
 }

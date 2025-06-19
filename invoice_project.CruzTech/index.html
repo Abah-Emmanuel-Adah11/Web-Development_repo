@@ -57,9 +57,9 @@
                     <tr>
                         <th class="table-head"> No</th>
                         <th>PRODUCT DESCRIPTION</th>
-                        <th>UNIT PRICE</th>
+                        <th>UNIT PRICE(&#8358;)</th>
                         <th>QUANTITY</th>
-                        <th>TOTAL</th>
+                        <th>TOTAL(&#8358;)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -134,11 +134,11 @@
                         <td class="last-column"><input></td>
                     </tr>
                     <tr class="last-row">
-                        <td><b>SUBTOTAL:<input id="subtotal"></b></td>
-                        <td><b>DISCOUNT:<input id="discount"></b></td>
-                        <td><b>VAT:<input id="vat"></b></td>
-                        <td><b>SERVICE CHARGE:<input id="service-charge"></b></td>
-                        <td><b>TOTAL DUE:<input id="grand-total"></b></td>
+                        <td><b>SUBTOTAL:(&#8358;)<input id="subtotal"></b></td>
+                        <td><b>DISCOUNT:(&#8358;)<input id="discount"></b></td>
+                        <td><b>VAT:(&#8358;)<input id="vat"></b></td>
+                        <td><b>SERVICE CHARGE:(&#8358;)<input id="service-charge"></b></td>
+                        <td><b>TOTAL DUE:(&#8358;)<input id="grand-total"></b></td>
                     </tr>
                 </tbody>
             </table> 
@@ -163,8 +163,10 @@
     <section id="terms">
             <div>
                 <h3><b>Terms & Conditions</b></h3>
-                <p>Please settle the invoice by paying into the account number provided. Kindly share<br>the payment reciept with us upon completion</p>
-                    <button onclick="getValue()" class="btn btn-custom">Generate Invoice</button>  
+                <p>
+                    Please settle the invoice by paying into the account number provided. Kindly share<br>the payment reciept with us upon completion
+                </p>
+                    <button onclick="getValue()" class="btn btn-custom">Generate Invoice</button> 
             </div>
     </section>
 
@@ -193,8 +195,13 @@
         </div>    
     </section>
     
+      <div id="invoice-container"></div>
+
     <!-- Bootstrap javaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="generate_pdf.js" charset="UTF-8"></script>
     <script src="./index.js" charset="UTF-8"></script>
 </body>
 </html>
