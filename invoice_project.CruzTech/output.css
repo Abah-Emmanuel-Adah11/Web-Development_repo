@@ -8,7 +8,7 @@ body{
 #invoice-container {
     display: none;
     background-color: white;
-    padding: 50px 70px;
+    padding: 65px 90px;
 }
 
 
@@ -40,9 +40,6 @@ img{
 
 
 /* Stakeholders Section */
-/* #stakeholders{
-    padding: 1rem 0 0 1rem;
-} */
 #stakeholders{
     padding: 5rem 1rem;
 }
@@ -56,6 +53,7 @@ img{
 }
 .sender{
     display: inline-block;
+    width: 150px;
 }
 
 /* Product Section */
@@ -63,40 +61,27 @@ img{
     padding-bottom: 100px;
     padding-top: 10px;
     height: 550px; /* For footer position*/
-    /* width: 70%;
-    margin: 0 auto; added */
 }
 
 .table-class{
-    margin: 0 auto;
-    border: none;
     text-align: center;
     border-collapse: collapse;
     border: none;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .table-head{
     background-color: #000035;
     color: #fff;
     padding: 2rem;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.5rem;
 }
 
-/* .last-column{
-    position: relative;
-} */
-
-/* .last-row{
-    position: absolute;
-    top: 100%;
-    right: 0;
-    display: grid;
-    width: 22%;
-    text-align: left;
-} */
+.alignment{
+   padding: 2rem;
+   padding-bottom: 0.5rem; 
+}
 
 .last-row td{
     display: block;
@@ -118,21 +103,10 @@ img{
 .total-due{
     background-color: #000035;
     color: #fff;
-    /* margin-top: 20px; */
-    /* display: flex;
-    justify-content: space-between; */
-    /* padding: 10px; */
-    /* text-align: center; */
-    /* height: 50px; */
-    /* width: 23vw; */
 }
 
 .total-due .total-text { /*added this with solo*/
-    padding: 2rem 0 0 2rem;
-}
-
-.division{
-    padding: 4rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
 

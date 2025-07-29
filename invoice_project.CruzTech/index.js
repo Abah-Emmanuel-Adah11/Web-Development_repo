@@ -93,7 +93,7 @@ function generateOutput(invoice) {
                 </span>
                 <ul class="heading-list">
                     <li><h1>INVOICE</h1></li>
-                    <li>Issued Number: INV202506${invoice.issued_number}</li>
+                    <li>Issued Number: INV202507${invoice.issued_number}</li>
                     <li>Issued Date: ${invoice.issued_date}</li>
                 </ul>
             </div>
@@ -119,15 +119,22 @@ function generateOutput(invoice) {
 
     <!-- Product listing section -->
     <section id="product-list">
-        <div class="row table-container">
+        <div class="row">
             <table class="table-class">
                 <thead>
                     <tr>
-                        <th class="table-head"> No</th>
-                        <th>PRODUCT DESCRIPTION</th>
-                        <th>UNIT PRICE</th>
-                        <th>QUANTITY</th>
-                        <th>TOTAL</th>
+                        <th class="table-head">No</th>
+                        <th class="alignment">PRODUCT DESCRIPTION</th>
+                        <th class="alignment">UNIT PRICE(&#8358;)</th>
+                        <th class="alignment">QUANTITY</th>
+                        <th class="alignment">TOTAL(&#8358;)</th>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>

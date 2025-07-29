@@ -64,8 +64,7 @@
   };
 
 function generateOutput(invoice) {
-    return `
-<!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -131,7 +130,7 @@ function generateOutput(invoice) {
                 </thead>
                 <tbody>
                 ${
-                  invoice.items ? invoice.items.map((item,i) => `
+                  invoice.items ? invoice.items.map((item,i) => 
                     <tr>
                         <td>${i + 1}</td>
                         <td>${item.product_description}</td>
@@ -139,11 +138,11 @@ function generateOutput(invoice) {
                         <td>${item.quantity}</td>
                         <td class="last-column">${item.total}</td>
                     </tr>
-                  `) : `
+                  ) : 
                     <tr>
                         <td></td>
                     </tr>
-                  `
+                  
                 }
                 </tbody>
             </table> 
@@ -174,6 +173,5 @@ function generateOutput(invoice) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./index.js" charset="UTF-8"></script>
 </body>
-</html>
-    `
+</html>`
 };

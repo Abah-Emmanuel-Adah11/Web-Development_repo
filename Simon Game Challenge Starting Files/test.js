@@ -5,16 +5,6 @@ let userClickedPattern = [];
 let started = false;
 var level = 0;
 
-// function checkAnswer(currentLevel) {
-//     let lastAnswer = buttonColor[userClickedPattern].index()
-//     if (lastAnswer = userClickedPattern) {
-//         console.log("success")
-//     }else{
-//         console.log("wrong");
-//     }
-    
-// }  // Step 8 current step.....
-
 
 $(document).keypress(function(){
 
@@ -32,11 +22,29 @@ $(document).keypress(function(){
         playSound(userChoosenColour); // As you call this function takes the userChoosenColor
                                         // as its input parameter. 
         animatePress(userChoosenColour); // same as playSound function above.
+        checkAnswer(userClickedPattern.length-1);
 });
 
-    
+
+function checkAnswer(currentLevel) {
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+      console.log("success");
+      if (userClickedPattern.length === gamePattern.length){
+        setTimeout(function () {
+          nextSequence();
+        }, 1000);
+      }
+
+    }  else{
+        console.log("wrong");
+        playSound("wrong");
+        $("body").addClass("game-over")
+    }
+};
+
 
 function nextSequence() {
+    userClickedPattern = [];
 
     level++;
     $("#level-title").text("Level "+level)
