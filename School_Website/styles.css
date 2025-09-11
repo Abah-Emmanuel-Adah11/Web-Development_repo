@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' sans-serif;
+}
+
+/* Global Tags */
+
+h1{
+    font-size: 2.5rem;
+    font-family: 700;
+    color: rgb(35, 35, 85);
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* Navigation */
+nav{
+    display: flex;
+    flex-direction: row; /* negligeable */
+    justify-content: space-between;
+    padding: 1vw 8vw;
+
+    /* for horizontal alignment to the centre within a specified container */
+    align-items: center;
+
+    /* adding a shadow like appearance to the navigation with 1st for x-axis, 2nd for y-axis & 3rd for the boader radius */
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+}
+
+nav img{
+    width: 150px;
+
+    /* This makes the logo pointable when hovered by a cusor */
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end; /* negligeable */
+    align-items: center; /* negligeable */
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    /* Ensures ease of transition of the hover effect */
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #FDC93B;
+}
+
