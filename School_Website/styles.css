@@ -30,8 +30,13 @@ h6{
 
 /* Navigation */
 nav{
+    /* To make the Nav-bar fixed at the top and maintain a 100% width*/
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+
     display: flex;
-    flex-direction: row; /* negligeable */
+    flex-direction: row; /* The flex direction should follow the row */
     justify-content: space-between;
     padding: 1vw 8vw;
 
@@ -65,11 +70,91 @@ nav ul li a{
     color: rgb(21, 21, 100);
     font-size: 16px;
     font-weight: 500;
+
     /* Ensures ease of transition of the hover effect */
     transition: 0.3s ease;
 }
 
 nav ul li a:hover{
     color: #FDC93B;
+}
+
+/* Home */
+
+#home{
+    /* This combines shadow like view, alongside the background image in the Home Page */
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)),url("images/back.jpg");
+    width: 100%;
+    height: 100vh;
+
+    /* To centralize the background-image and make the Zoom a perfect fit */
+    background-size: cover;
+    background-position: center;
+
+    /* To centralize the content on the background-image */
+    display: flex;
+
+    flex-direction: column; /* The flex direction should follow the column */
+
+    justify-content: center;
+
+    /* For items within the targeted parent */
+    align-items: center;
+
+    /* For text contents only */
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home p{
+    color:#fff;
+    width: 50%;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home .btn .blue-btn{
+    color: #fff;
+    background: rgb(21, 21, 100);
+
+    /* Ensures ease of transition of the hover effect */
+    transition: 0.3s ease;
+}
+
+#home .btn .blue-btn:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}
+
+#home .btn .yellow-btn{
+    color: #fff;
+    background-color: #FDC93B;
+
+    /* Ensures ease of transition of the hover effect */
+    transition: 0.3s ease;
+}
+
+#home .btn .yellow-btn:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
 }
 
